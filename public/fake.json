@@ -6,7 +6,7 @@
         "url":"https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png",
       
         "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-        "time":"05 min read",
+        "time": 5,
         "date":"02-25-2023"
        
     },
@@ -17,7 +17,7 @@
         "url":"https://www.freecodecamp.org/news/content/images/2021/05/beau-carnes-gravatar.jpeg",
         
         "img": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "time":"10 min read",
+        "time":10,
         "date":"03-01-2023"
        
     },
@@ -28,7 +28,7 @@
         "url":"https://www.vhv.rs/dpng/d/551-5511364_circle-profile-man-hd-png-download.png",
         
        "img":"https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "time":"15 min read",
+        "time":15,
         "date":"03-20-2023"
        
     },
@@ -38,7 +38,7 @@
         "title": "Graphs for data visualization ",
         "url":"https://4144892.fs1.hubspotusercontent-na1.net/hub/4144892/hubfs/kosma-hess-blog.jpg?quality=high&width=56&name=kosma-hess-blog.jpg",
         "img": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-        "time":"20 min read",
+        "time":20,
         "date":"03-01-2023"
        
     }

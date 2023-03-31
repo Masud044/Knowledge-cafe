@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Takedata from '../Takedata/Takedata';
+import Timeadd from '../Timeadd/Timeadd';
 
 const Product = () => {
     const[cover,setCover]=useState([]);
     const [cart,setCart]=useState([]);
+    const[times,setTimes]=useState(0);
      useEffect(()=>{
           fetch('fake.json')
           .then(res=>res.json())
@@ -14,6 +16,14 @@ const Product = () => {
         const newcart = [...cart,product];
         setCart(newcart);
    }
+   
+   const Timehandle=(time)=>{
+      let total = times + time;
+   
+       setTimes(total);
+   
+   }
+     
     return (
         <div className='container mx-auto flex justify-between gap-10 mb-10'>
             <div>
@@ -21,19 +31,16 @@ const Product = () => {
                  cover.map(data=><Takedata 
                     key={data.id}
                     data={data}
-                    handleBookmark={handleBookmark}>
+                    handleBookmark={handleBookmark}
+                    Timehandle={Timehandle}
+                    >
                     
                     </Takedata>)
              }   
             </div>
             <div className=''>
-                <div className='mb-10 bg-zinc-200 p-4 rounded-lg'>
-                  Spent time on read : 0 min
-                </div>
-              
-               <div className='bg-slate-300 p-4 rounded-lg'>
-                   <h1>Bookmarked Blogs : {cart.length}</h1>
-               </div>
+               <Timeadd cart={cart} time={times}></Timeadd>
+             
             </div>
             
         </div>

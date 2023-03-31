@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Takedata = (props) => {
-   // console.log(props)
-
+  
+console.log(props)
     const { id, img, url, title, name, date, time } = props.data;
     const handleBookmark=props.handleBookmark;
-    //console.log(handleBookmark);
+    const Timehandle = props.Timehandle;
     
     return (
         <div className=''>
@@ -22,13 +22,13 @@ const Takedata = (props) => {
 
 
                     </div>
-                    <p className='pr-2'>{time}  <span onClick={()=>handleBookmark(props.data)} className='text-orange-400'> <FontAwesomeIcon icon={faBookmark }/> </span>
+                    <p className='pr-2'>{time} min read  <span onClick={()=>handleBookmark(props.data)} className='text-orange-400'> <FontAwesomeIcon icon={faBookmark }/> </span>
 </p>
                 </div>
 
                 <p className='ml-8'>{date}</p>
                 <h1 className='text-2xl font-semibold mt-10'>{title}</h1>
-                <a className='text-sky-500 mt-20' href="#">Mark as read</a>
+                <button onClick={()=>Timehandle(time)} className='text-sky-500 mt-20 border' >Mark as read</button>
             </div>
 
 
