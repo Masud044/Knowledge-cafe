@@ -25,7 +25,7 @@ const Product = () => {
    }
      
     return (
-        <div className='container mx-auto flex justify-between gap-10 mb-10'>
+        <div className='container mx-auto md:flex p-2 justify-between gap-10 mb-10'>
             <div>
             {
                  cover.map(data=><Takedata 

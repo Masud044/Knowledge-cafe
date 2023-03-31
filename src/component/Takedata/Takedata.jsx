@@ -4,7 +4,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Takedata = (props) => {
   
-console.log(props)
+
     const { id, img, url, title, name, date, time } = props.data;
     const handleBookmark=props.handleBookmark;
     const Timehandle = props.Timehandle;
@@ -15,7 +15,7 @@ console.log(props)
 
                 <img className='h-96' src={img} alt="" />
                 <div className='flex justify-between mt-8'>
-                    <div className='flex justify-items-center items-center gap-4'>
+                    <div className='flex justify-items-center md:items-center gap-4'>
                         <img className='h-6 mt-3' src={url} alt="" />
 
                         <p className='font-medium'>{name}</p>

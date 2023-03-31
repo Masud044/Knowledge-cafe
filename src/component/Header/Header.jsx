@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='container mx-auto flex justify-between m-10'>
+        <div className='container mx-auto md:flex p-2 justify-between m-10'>
             <div>
                 <h1 className='font-semibold text-4xl'>Knowledge Cafe</h1>
             </div>
