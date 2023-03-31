@@ -1,13 +1,10 @@
 import React from 'react';
+import BookmarkTitle from '../BookmarkTitle/BookmarkTitle';
 
 const Timeadd = (props) => {
     
     const{cart, time}=props;
-    let title1 = [];
-    props.cart.map(p=>{
-        title1.push(p.title);
-    })
-    console.log(title1)
+    
    
     return (
         <div>
@@ -18,9 +15,10 @@ const Timeadd = (props) => {
               
                <div className='bg-slate-300 p-4 rounded-lg'>
                    <h1 className='text-2xl font-medium'>Bookmarked Blogs : {cart.length}</h1>
-                   <div className='mt-4 shadow-lg p-4 bg-white rounded-lg'>
-                    <p className='font-medium'>{title1}</p>
-                   </div>
+                   {
+                    props.cart.map(p =><BookmarkTitle titleAdd={p} key={p.title}></BookmarkTitle> )
+                   }
+                   
                    
                </div>
               
