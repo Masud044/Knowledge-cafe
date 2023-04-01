@@ -16,7 +16,9 @@ const Timeadd = (props) => {
                <div className='bg-slate-300 p-4 rounded-lg'>
                    <h1 className='text-2xl font-medium'>Bookmarked Blogs : {cart.length}</h1>
                    {
-                    props.cart.map(p =><BookmarkTitle titleAdd={p} key={p.title}></BookmarkTitle> )
+                    props.cart.map(p =><BookmarkTitle 
+                        
+                        titleAdd={p} key={p.title}></BookmarkTitle> )
                    }
                    
                    
